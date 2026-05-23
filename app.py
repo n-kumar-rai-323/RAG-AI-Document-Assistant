@@ -37,7 +37,7 @@ if "chat_history" not in st.session_state:
 
 
 with st.sidebar:
-    st.header("📄 Upload PDF")
+    st.header(" Upload PDF ")
 
     uploaded_file = st.file_uploader("Choose PDF", type="pdf")
 
@@ -74,7 +74,7 @@ with st.sidebar:
 
 
 if st.session_state.vectorstore is None:
-    st.info("👈 Upload a PDF to start chatting")
+    st.info(" Upload a PDF to start chatting ")
     st.stop()
 
 
